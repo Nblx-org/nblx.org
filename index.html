@@ -33,21 +33,32 @@
           </div>
           <div class="terminal-body">
             <div class="line">
-              <span class="prompt">$</span>
-              <span class="command">pip install -g noblox</span>
-            </div>
-            <div class="line">
-              <span class="prompt">$</span>
+              <span class="prompt">li@~/somesrc $</span>
               <span class="command">nblx init</span>
             </div>
-            <div class="output">✨ Project initialized with nblx</div>
-            <div class="line">
-              <span class="prompt">$</span>
-              <span class="command">nblx add API_KEY</span>
+            <div class="output">Checking for secrets for github:somesrc<br/>
+              ✨ Encrypted keyvault for github:somesrc exists!<br/>
+              ✨ Found li's git ssh keys for somesrc in ~/.ssh/<br/>
+              ✨ Attempting to decrypt keyvault invite with private key...success<br/>
+              ✨ Saving keyvault key. Encrypting locally<br/>
+              ✨ Found API keys...Attempting to decrypt...success<br/>
+              ✨ Added Openrouter, AWS and Hyperbolic keys to .env<br/>
             </div>
-            <div class="output">🔒 Secret API_KEY added successfully</div>
             <div class="line">
-              <span class="prompt">$</span>
+              <span class="prompt">li@~/somesrc $</span>
+              <span class="command">npm run staging</span>
+            </div>
+            <div class="output">✨ nblx: switching .env keys to staging<br/>
+              ...
+            </div>
+            <div class="line">
+              <span class="prompt">li@~/somesrc $</span>
+              <span class="command">nblx add VAST_API_KEY</span>
+            </div>
+            <div class="output">✨ Enter key: *****************<br/>
+            🔒 VAST_API_KEY key added successfully</div>
+            <div class="line">
+              <span class="prompt">li@~/somesrc $</span>
               <span class="command" id="current-command"></span>
               <span class="cursor"></span>
             </div>
