@@ -1,8 +1,9 @@
 const commands = [
-  'nblx list',
-  'nblx share --team frontend',
-  'nblx rotate API_KEY',
-  'nblx verify'
+  'nblx invite',
+  'nblx share',
+  'nblx checkout',
+  'nblx log',
+  'nblx pull'
 ];
 
 let currentCommandIndex = 0;
