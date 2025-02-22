@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>nblx - Modern Secrets Management</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">nblx</div>
+        <div class="nav-links">
+          <a href="#features">Features</a>
+          <a href="#docs">Documentation</a>
+          <a href="https://github.com/nblx" target="_blank">GitHub</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <h1>Still sending API keys over Slack?</h1>
+        <p class="subtitle">Get your shit together with modern secrets management</p>
+        
+        <div class="terminal">
+          <div class="terminal-header">
+            <div class="terminal-buttons">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="terminal-title">terminal</div>
+          </div>
+          <div class="terminal-body">
+            <div class="line">
+              <span class="prompt">$</span>
+              <span class="command">pip install -g nblx</span>
+            </div>
+            <div class="line">
+              <span class="prompt">$</span>
+              <span class="command">nblx init</span>
+            </div>
+            <div class="output">✨ Project initialized with nblx</div>
+            <div class="line">
+              <span class="prompt">$</span>
+              <span class="command">nblx add API_KEY</span>
+            </div>
+            <div class="output">🔒 Secret API_KEY added successfully</div>
+            <div class="line">
+              <span class="prompt">$</span>
+              <span class="command" id="current-command"></span>
+              <span class="cursor"></span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="features" class="features">
+        <h2>So easy, you might already be using it.</h2>
+        <div class="feature-grid">
+          <div class="feature-card">
+            <h3>🔒 Just Works™</h3>
+            <p>End-to-end encrypted, no-trust models. But also, easy.</p>
+          </div>
+          <div class="feature-card">
+            <h3>🤝 Drama Free</h3>
+            <p>Cycle API keys and they get distributed automagically.</p>
+          </div>
+          <div class="feature-card">
+            <h3>🔄 Git BFF</h3>
+            <p>Commits secrets to Git? Not on our watch.</p>
+          </div>
+          <div class="feature-card">
+            <h3>🚀 Your Rules</h3>
+            <p>Self-host or use our cloud. Like pizza toppings, it's your choice.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>nblx - Open Source Secrets Management</p>
+      <div class="footer-links">
+        <a href="#privacy">Privacy</a>
+        <a href="#terms">Terms</a>
+        <a href="https://github.com/nblx" target="_blank">GitHub</a>
+      </div>
+    </footer>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
